@@ -1,0 +1,88 @@
+.nav-bar {
+    width: calc(100% - 40px);
+    max-width: 1400px;
+    background: rgba(0, 0, 0, 0.1); /* Light black background with transparency */
+    border-radius: 15px; /* Curvy border */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin: 0 auto; /* Center the nav bar horizontally */
+    margin-top: 20px; 
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-items {
+    list-style: none;
+    padding: 5px 5px;
+    margin: 0;
+    display: flex;
+    gap: 60px; /* Space between menu items */
+  }
+  
+  .nav-items li {
+    margin: 0;
+    position: relative;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #000000; /* White text for contrast */
+    font-family: 'helvetica', sans-serif;
+    font-size: 21px; /* Adjust font size as needed */
+    padding-bottom: 5px;
+  }
+
+  /*Change color to highlight active link
+  .nav-items a.active {
+    color: #ff0;
+  }*/
+  
+  .nav-items a.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(8, 8, 8); /* Color of the triangle */
+  }
+
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #333; /* Dark border for the input */
+    border-radius: 20px; /* Curvy border */
+    background: rgba(255, 255, 255, 0.2); /* Light background for the input */
+    color: #fff; /* White text for contrast */
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #333; /* Dark background for the button */
+    color: #fff; /* White text */
+    border-radius: 20px; /* Curvy border */
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+  

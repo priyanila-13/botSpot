@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /*height: 150vh;*/
+  height: auto;
+  background: linear-gradient(135deg, rgba(255, 165, 0, 0.6), rgba(255, 255, 255, 0.6), rgba(0, 128, 0, 0.6));
+  background-blend-mode: multiply;
+  filter: blur(0.5px) saturate(0.8) brightness(0.9);
+  position: relative;
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sentence {
+  margin: 0;
+  color: black;
+  font-weight: bolder;
+  font-size: 80px;
+  padding-left: 60px;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  padding-right: 40px;
+}
+
+/*.App > .header + .nav-bar {
+  margin-top: 5px; 
+}*/

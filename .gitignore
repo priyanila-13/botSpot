@@ -1,0 +1,25 @@
+# Ignore React build and modules
+botspot/node_modules/
+botspot/build/
+
+# Ignore Python virtual environment and caches
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Ignore dataset
+backend/phase1/
+backend/phase2/
+
+# IDE / System files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs & env
+*.log
+.env
